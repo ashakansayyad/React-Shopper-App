@@ -1,0 +1,115 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_logo p {
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer_links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+
+.footer_links li {
+    cursor: pointer;
+}
+
+.footer_social_icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_icons_container {
+    padding: 10px;
+    cursor: pointer;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+}
+
+.footer_copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.footer_copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+/* Tablet Devices (768px and below) */
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem; /* Add padding for tablet */
+    }
+  
+    .footer_links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Spacing between links */
+    }
+  
+    .footer_links li {
+        font-size: 18px; /* Adjust font size */
+    }
+  
+    .footer_copyright {
+        font-size: 18px; /* Adjust copyright font size */
+    }
+}
+
+/* Mobile Devices (376px and below) */
+@media only screen and (max-width: 376px) {
+    .footer {
+        padding: 1rem; /* Smaller padding for mobile */
+        gap: 30px; /* Smaller gap for layout */
+    }
+
+    .footer_logo p {
+        font-size: 28px; /* Smaller font size for logo */
+    }
+
+    .footer_links {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .footer_links li {
+        font-size: 16px; /* Smaller font size for links */
+    }
+
+    .footer_copyright {
+        font-size: 16px; /* Smaller font size for copyright */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0; /* Further adjust padding for small devices */
+    }
+}

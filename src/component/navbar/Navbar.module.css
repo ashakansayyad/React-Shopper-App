@@ -1,0 +1,151 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.logoConatiner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.categContainer {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navlink {
+    color: #626262;
+    text-decoration: none;
+}
+
+.categContainer li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.categContainer li hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.cartConatiner {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.loginBtn {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.loginBtn:active {
+    background: #f3f3f3;
+}
+
+.cartCount {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 14px;
+    background: red;
+    color: white;
+}
+
+/* Media Queries */
+
+/* For Tablet Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categContainer {
+        gap: 30px;
+        font-size: 18px;
+    }
+
+    .cartConatiner {
+        gap: 30px;
+    }
+
+    .loginBtn {
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* For Mobile Devices (max-width: 376px) */
+@media (max-width: 376px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logoConatiner {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .categContainer {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .cartConatiner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .loginBtn {
+        width: 130px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .cartCount {
+        margin-top: -25px;
+        margin-left: -40px;
+    }
+}
